@@ -18,24 +18,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://dev.getchoosi.com/app/#/public-menus/grabngo')
 
-WebUI.click(findTestObject('Page_Choosi_Login/a_Switch Menus'))
+WebUI.click(findTestObject('Object Repository/Menu GandG/a_Switch Menus'))
 
-WebUI.click(findTestObject('Object Repository/Page_Choosi_Login/span_Demo District 101 S.C.'))
+/*WebUI.click(findTestObject('Object Repository/Menu GandG/div_Demo High School 1'))*/
+new_btn = WebUI.modifyObjectProperty(findTestObject('Menu GandG/div_Demo High School 1'), 'id', 'equals', '//*[@id="ember-power-select-trigger-ember"]', 
+    false)
+WebUI.delay(3)
+WebUI.click(new_btn)
 
-WebUI.click(findTestObject('Object Repository/Page_Choosi_Login/li_Demo District 101 S.C.'))
+WebUI.click(findTestObject('Object Repository/Menu GandG/span_Demo High School 2'))
 
-WebUI.click(findTestObject('Object Repository/Page_Choosi_Login/div_Demo High School 1'))
+WebUI.click(findTestObject('Object Repository/Menu GandG/button_Switch'))
 
-WebUI.click(findTestObject('Object Repository/Page_Choosi_Login/span_Demo High School 1'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Page_Choosi_Login/button_Switch'))
-
-WebUI.navigateToUrl('https://dev.getchoosi.com/app/#/public-menus/grabngo')
+WebUI.verifyElementPresent(findTestObject('Menu GandG/strong_Demo High School 2'), 5000)
 
 WebUI.closeBrowser()
 
