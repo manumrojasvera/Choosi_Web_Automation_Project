@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Switch</name>
+   <tag></tag>
+   <elementGuidId>e1adfa64-3942-42bb-bc93-ce50ba128fd4</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-success col-sm-12 col-xs-12 col-md-12 buttonSubmitColor padding-button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ember-action</name>
+      <type>Main</type>
+      <value>1028</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Switch</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ember993&quot;)/div[@class=&quot;col-xs-12 modal-school-switch modal-style&quot;]/div[@class=&quot;col-md-6 col-xs-6 col-sm-6 modal-button-padding&quot;]/button[@class=&quot;btn btn-success col-sm-12 col-xs-12 col-md-12 buttonSubmitColor padding-button&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

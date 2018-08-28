@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Valid credentials</name>
+   <name>Switch-Select District and School</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0ce78448-ae6e-43e2-8c86-91ab8eccc460</testCaseGuid>
+   <testCaseGuid>56717e63-d63e-4847-9ef7-85f46aee42cc</testCaseGuid>
 </TestCaseEntity>

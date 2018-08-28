@@ -19,3 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://dev.getchoosi.com/app/#/public-menus/grabngo')
+
+WebUI.click(findTestObject('Menu GandG/Switch District and School/a_Switch Menus'))
+
+new_btn = WebUI.modifyObjectProperty(findTestObject('Object Repository/Menu GandG/Switch District and School/div_Demo District 101 S.C.'), 
+    'id', 'equals', '//*[@id="ember-power-select-trigger-ember"]', false)
+
+WebUI.click(new_btn)
+
+WebUI.setText(findTestObject('Menu GandG/Switch District and School/input'), 'demo')
+
+WebUI.click(findTestObject('Menu GandG/Switch District and School/li_Demopolis City Ala.'))
+
+new_btn_2 = WebUI.modifyObjectProperty(findTestObject('Object Repository/Menu GandG/Switch District and School/div_Please select a school.'), 
+    'id', 'equals', '//*[@id="ember-power-select-trigger-ember"]', false)
+
+WebUI.click(new_btn_2)
+
+WebUI.delay(2)
+
+WebUI.verifyTextPresent('Demopolis City', true)
+
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+

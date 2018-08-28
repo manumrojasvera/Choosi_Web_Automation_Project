@@ -18,19 +18,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://dev.getchoosi.com/app/#/login?goLogin=true')
+WebUI.navigateToUrl('https://dev.getchoosi.com/app/#/public-menus/grabngo')
 
-WebUI.setText(findTestObject('Page_Choosi_Login/input_identification'), 'Julieta')
+WebUI.click(findTestObject('Menu GandG/Switch District and School/a_Switch Menus'))
 
-WebUI.setEncryptedText(findTestObject('Page_Choosi_Login/input_password'), 'j1INIxr+GRyqvipkC1+6ow==')
+new_btn = WebUI.modifyObjectProperty(findTestObject(('Object Repository/Menu GandG/Switch District and School/div_Demo District 101 S.C.')), 'id', 'equals', '//*[@id="ember-power-select-trigger-ember"]', 
+    false)
+WebUI.click(new_btn)
 
-WebUI.click(findTestObject('Page_Choosi_Login/button_Sign In'))
+WebUI.setText(findTestObject('Menu GandG/Switch District and School/input'), 'demo')
 
-WebUI.verifyElementVisible(findTestObject('Page_Choosi_Login/p_Julieta Peterson'))
+WebUI.click(findTestObject('Menu GandG/Switch District and School/li_Demopolis City Ala.'))
+
+new_btn_2 = WebUI.modifyObjectProperty(findTestObject(('Object Repository/Menu GandG/Switch District and School/div_Please select a school.')), 'id', 'equals', '//*[@id="ember-power-select-trigger-ember"]', 
+    false)
+WebUI.click(new_btn_2)
+
+WebUI.click(findTestObject('Menu GandG/Switch District and School/li_Us Jones Elementary School'))
+
+WebUI.click(findTestObject('Menu GandG/Switch District and School/button_Switch'))
+WebUI.delay(3)
+
+WebUI.verifyElementPresent((findTestObject('Object Repository/Menu GandG/Switch District and School/div_Us Jones Elementary School')), 5000)
 
 WebUI.closeBrowser()
 
