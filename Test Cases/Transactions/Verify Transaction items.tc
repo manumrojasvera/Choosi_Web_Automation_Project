@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test verify that the transactions items are loaded and displayed</description>
+   <name>Verify Transaction items</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>475b3107-36f7-46e5-b94f-152b626b1675</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Yhis test verify the School Info for an specific student is displayed correctly, District, School, Studen Id and grade</description>
+   <name>Verify School Info</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6c328af0-7f2a-42bd-899b-9fc670d22b52</testCaseGuid>
+</TestCaseEntity>

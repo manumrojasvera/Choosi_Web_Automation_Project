@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This Test verify the current date when a User access to a public Menu</description>
+   <name>Current-Date</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8a043e3-3d2a-43fe-97c3-deff0d608c4a</testCaseGuid>
+</TestCaseEntity>

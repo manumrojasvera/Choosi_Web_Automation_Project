@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test verify the message when a User access with his account and there is not available menu items</description>
+   <name>Menus-No Items displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d6ad7eea-7e7e-4839-a078-9493ab0a29f9</testCaseGuid>
+</TestCaseEntity>

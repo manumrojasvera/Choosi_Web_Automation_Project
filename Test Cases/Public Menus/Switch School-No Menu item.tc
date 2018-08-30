@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test verify a message when there's not available menu items</description>
+   <name>Switch School-No Menu item</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1ac6ad9-7f81-4be5-a3f4-98a1bff4c811</testCaseGuid>
+</TestCaseEntity>
